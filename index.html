@@ -1,0 +1,93 @@
+<!-- 
+ .o88b.  .d88b.  d8888b. d88888b d8888b.      d8888b. db    db      d8888b.  .d8b.  db    db d888888b d8888b.  .d8b.  d8888b. 
+d8P  Y8 .8P  Y8. 88  `8D 88'     88  `8D      88  `8D `8b  d8'      88  `8D d8' `8b `8b  d8'   `88'   88  `8D d8' `8b 88  `8D 
+8P      88    88 88   88 88ooooo 88   88      88oooY'  `8bd8'       88oodD' 88ooo88  `8bd8'     88    88   88 88ooo88 88oobY' 
+8b      88    88 88   88 88~~~~~ 88   88      88~~~b.    88         88~~~   88~~~88    88       88    88   88 88~~~88 88`8b   
+Y8b  d8 `8b  d8' 88  .8D 88.     88  .8D      88   8D    88         88      88   88    88      .88.   88  .8D 88   88 88 `88. 
+ `Y88P'  `Y88P'  Y8888D' Y88888P Y8888D'      Y8888P'    YP         88      YP   YP    YP    Y888888P Y8888D' YP   YP 88   YD 
+                                                                                                                              
+                                                                                                                              
+-->
+<html>
+    <head>
+        <title>Payidar Kadir - Ankara</title>
+
+        <!-- Meta -->
+
+        <!-- Link -->
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <!-- Script -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/9ef7ec4929.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div class="copyright">
+            <a href="#" id="home">Home</a>
+        </div>
+
+        <!-- Home -->
+        <div class="home">
+            <h1>Hey..</h1>
+            <p>Sosyal Mecralardan Beni Takip Et.</p>
+            <hr/>
+            <div class="social-media">
+                <a href="https://instagram.com/06.kadirx" title="İnstagram"><i class="fab fa-instagram"></i></a>
+                <div class="cizgi"></div>
+                <a href="https://twitter.com/payidarorjinal" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <div class="cizgi"></div>
+                <a href="https://discord.com/users/842083130260848711" title="Discord"><i class="fab fa-discord"></i></a>
+                <div class="cizgi"></div>
+                <a href="https://github.com/payidarofficial" title="Github"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <!-- Box | Coded By Pâyidar.... -->
+        <div class="opacity-bg">
+            <div class="box">
+                <div class="fixed-image">
+                    <img src="img/a_a572da266eef6e62d36c5417313fe11a.gif">
+                    <div class="description">
+                        <span>Payidar Kadir</span>
+                        <p>Software Developer | Ankara</p>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <a href="https://instagram.com/06.kadirx" title="İnstagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="title">
+                    <h1>WebSite Designer - Pilav & Cacık Lover.</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Script -->
+        <script>
+            $(function(){
+                $('.copyright a').click(function(){
+                    $('.box').css({
+                        "transform": "scale(0)",
+                        "left": "200px",
+                    })
+                    $('.home').css({
+                        "position": "absolute",
+                        "left": "50%",
+                        "right": "50%",
+                        "transform": "translate(-50%, -50%) scale(1.9)",
+                        "opacity": "1"
+                    })
+                    $('.copyright a').hide();
+                setTimeout(() => {
+                    $('.box').css({
+                        "display": "none"
+                    })
+                }, 100)
+                })
+            })
+        </script>
+        <!-- Script -->
+    </body>
+</html>
