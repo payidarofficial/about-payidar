@@ -9,9 +9,14 @@
     --selection-color: white;
 
     /* Box */
+    --box-text-color: white;
     --box-bg-color: white;
     --box-padding: 20px;
     --box-image-width: 100%;
+    --box-radius: 10px
+
+    /* Background - Color */
+    --saydam-arkaplan: rgba(0, 0, 0, .5);
 }
 
 /* Ayarlama */
@@ -34,7 +39,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: var(--saydam-arkaplan);
 }
 .box{
     background-color: var(--box-bg-color);
@@ -63,7 +68,7 @@ body{
 .box .fixed-image .description span{
     display: block;
     text-align: center;
-    color: white;
+    color: var(--box-text-color);
     font-family: 'Raleway', sans-serif;
     font-size: x-large;
     font-weight: bold;
@@ -71,7 +76,7 @@ body{
 }
 .box .fixed-image .description p{
     text-align: center;
-    color: white;
+    color: var(--box-text-color);
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
@@ -84,12 +89,12 @@ body{
     display: none;
 }
 .box .social-media a{
-    font-size: 30px;
-    color: white;
+    color: black;
     text-decoration: none;
     transition: 250ms all;
     padding: 10px;
     margin: 30px;
+    font-size: 35px;
 }
 .box .title h1{
     padding: 10px;
@@ -159,7 +164,7 @@ body{
     height: 1px;
     opacity: .3;
 }
-.home .social-media{
+.home > .social-media{
     display: flex;
     justify-content: space-between;
 }
